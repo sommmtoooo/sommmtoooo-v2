@@ -6,8 +6,29 @@ const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({ weight: '300', subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Somtochukwu N Leroy",
+  title: "Somtochukwu",
   description: "Software Developer",
+  creator: "Somtochukwu N Leroy",
+  robots: {
+    nocache: true,
+  },
+  keywords: ["somtochukwu", "somtochukwu nnalue", "somtodev", "leroy nnalue", "padawan", "software developer", "somtodev blog", "somtochukwu blog", "alienxr", "alienxroy"],
+  twitter: {
+    title: 'Somtochukwu',
+    description: 'Software Developer',
+    creator: 'Sommmtoooo',
+    creatorId: 'sommmtoooo'
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://sommmtoooo.vercel.app',
+    title: 'Somtochukwu',
+    description: 'Software Developer',
+    siteName: 'Somtochukwu',
+    images: [{
+      url: 'https://sommmtoooo.vercel.app/images/card/card.png'
+    }]
+  }
 };
 
 export default function RootLayout({
