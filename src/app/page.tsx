@@ -26,7 +26,7 @@ export default function page() {
         <p className='text-neutral-400 my-3 max-w-prose text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aliquid magni quae? Eaque fuga, dignissimos explicabo, ut sapiente dolorem eveniet accusantium, laboriosam ex veritatis mollitia.</p>
 
         <ul className='ml-5 list-disc'>
-          <li className='my-2 text-xl text-neutral-300'>Videography, Photography</li>
+          <li className='my-2 text-xl text-neutral-300'>Videography, <Link href={'/gallery'}>Photography</Link></li>
           <li className='my-2 text-xl text-neutral-300'>Reading, Writing</li>
           <li className='my-2 text-xl text-neutral-300'>Typescript, Python</li>
         </ul>
