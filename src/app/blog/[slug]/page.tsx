@@ -1,7 +1,19 @@
-import React from 'react'
+import { getPostContent } from "@/utils/posts.utils";
+import Markdown from "markdown-to-jsx";
+import React from "react";
 
-export default function page() {
+interface Props {
+  params: any;
+}
+
+export default function page({ params }: Props) {
+  const slug = params.slug;
+  const post = getPostContent(slug);
   return (
-    <div>page</div>
-  )
+    <div>
+      <article>
+        <Markdown>{post.content}</Markdown>
+      </article>
+    </div>
+  );
 }
