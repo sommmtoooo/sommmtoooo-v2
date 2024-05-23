@@ -1,0 +1,61 @@
+body {
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1.2em 0 0.5em;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+ul,
+ol {
+  margin: 1em 0;
+  padding: 0 1.5em;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+.blog-content p {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  @apply max-w-prose;
+}
+
+.blog-content p > code {
+  padding: 0.15rem 0.4rem;
+  font-family: "Courier New", Courier, monospace;
+  border: 1px solid white @apply text-emerald-400 bg-red-400 text-xs
+    font-semibold rounded-sm border border-emerald-500;
+}
+
+.blog-content pre {
+  background-color: var(--secondary-dark) !important;
+  padding: 1.25rem;
+  font-size: 0.85rem;
+  font-family: "Courier New", Courier, monospace;
+  overflow-x: auto;
+}
+
+.blog-content blockquote {
+  @apply bg-emerald-500 bg-opacity-10 border-l-2 border-emerald-500 px-4 py-2.5 my-4;
+}
+
+.blog-content blockquote p {
+  font-style: italic;
+  font-size: 0.88rem;
+  line-height: 1.9;
+  margin: 0;
+  @apply text-emerald-500;
+}

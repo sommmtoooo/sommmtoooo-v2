@@ -53,11 +53,9 @@ export default function page() {
         </p>
 
         <ul className="ml-5 list-disc">
-          <li className="my-2 text-xl text-neutral-300">
-            Videography, <Link href={"/gallery"}>Photography</Link>
-          </li>
-          <li className="my-2 text-xl text-neutral-300">Reading, Writing</li>
-          <li className="my-2 text-xl text-neutral-300">Typescript, Python</li>
+          <li className="my-2 text-xl text-neutral-400">Videography, Chess</li>
+          <li className="my-2 text-xl text-neutral-400">Reading, Writing</li>
+          <li className="my-2 text-xl text-neutral-400">Typescript, Python</li>
         </ul>
       </section>
 
@@ -96,8 +94,10 @@ export default function page() {
           ))}
         </div>
 
-        <Link href={"#"} className="font-semibold transition-all hover:ml-5">
-          {" "}
+        <Link
+          href={"/blog"}
+          className="underline font-semibold transition-all hover:ml-5 hover:text-emerald-400"
+        >
           More Writings &gt;
         </Link>
       </section>
@@ -106,9 +106,34 @@ export default function page() {
       <section className="my-16">
         <h2 className="font-semibold text-2xl">Contact</h2>
         <p className="text-neutral-400 my-3 max-w-prose text-xl">
-          I&apos;d be happy to write back if you&apos;d like to send me an
-          email. Otherwise you can follow me on Twitter Mastodon, Github or
-          LinkedIn.
+          I&apos;d be happy to write back if you&apos;d like to send me{" "}
+          <Link
+            href={"mailto:leroynnalue65@gmail.com"}
+            className="underline text-emerald-400"
+          >
+            an email
+          </Link>
+          . Otherwise you can follow me on{" "}
+          <Link
+            href={"twitter.com/sommmtoooo"}
+            className="underline text-emerald-400"
+          >
+            Twitter
+          </Link>
+          ,&nbsp;
+          <Link
+            href={"twitter.com/sommmtoooo"}
+            className="underline text-emerald-400"
+          >
+            Github
+          </Link>
+          &nbsp; or &nbsp;
+          <Link
+            href={"twitter.com/sommmtoooo"}
+            className="underline text-emerald-400"
+          >
+            LinkedIn
+          </Link>
         </p>
       </section>
     </section>
