@@ -7,10 +7,12 @@ export type Project = {
 };
 
 export type Post = {
+  slug?: string;
   title: string;
   description: string;
-  published_date: string;
+  date: string;
   draft: boolean;
+  keywords: string;
 };
 
 export type Interest = { content: string };
