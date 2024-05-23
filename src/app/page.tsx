@@ -91,8 +91,8 @@ export default function page() {
         </p>
 
         <div className="my-8">
-          {posts.map((post) => (
-            <BlogCard post={post} />
+          {posts.map((post, index) => (
+            <BlogCard key={index} post={post} />
           ))}
         </div>
 
