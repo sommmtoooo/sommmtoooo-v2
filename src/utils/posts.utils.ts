@@ -45,3 +45,7 @@ export function getPostContent(slug: string) {
   const content = readFileSync(file_path, "utf-8");
   return matter(content);
 }
+
+export function getPostBySlug(slug: string) {
+  return getPostMetaData(POSTS_DIRECTORY).find((post) => post.slug === slug);
+}
