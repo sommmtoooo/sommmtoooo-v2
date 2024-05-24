@@ -114,21 +114,24 @@ export default function page() {
           </Link>
           . Otherwise you can follow me on{" "}
           <Link
-            href={"twitter.com/sommmtoooo"}
+            target="_blank"
+            href={"https://twitter.com/sommmtoooo"}
             className="underline text-emerald-400"
           >
             Twitter
           </Link>
           ,&nbsp;
           <Link
-            href={"twitter.com/sommmtoooo"}
+            target="_blank"
+            href={"https://github.com/sommmtoooo"}
             className="underline text-emerald-400"
           >
             Github
           </Link>
           &nbsp; or &nbsp;
           <Link
-            href={"twitter.com/sommmtoooo"}
+            target="_blank"
+            href={"https://www.linkedin.com/in/sommmtoooo"}
             className="underline text-emerald-400"
           >
             LinkedIn
