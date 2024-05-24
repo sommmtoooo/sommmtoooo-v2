@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
 
-export async function generateMetadata(): Metadata {
+export async function generateMetadata() {
   return {
     title: "Blog",
     description:
