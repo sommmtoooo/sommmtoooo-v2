@@ -1,9 +1,35 @@
-import BlogCard from "@/components/BlogCard";
 import BlogList from "@/components/BlogList";
 import { getDateYear } from "@/utils";
 import { POSTS_DIRECTORY, getPostMetaData } from "@/utils/posts.utils";
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
+
+export async function generateMetadata(): Metadata {
+  return {
+    title: "Blog",
+    description:
+      "A place for my thoughts, adventures and experiences worth sharing...",
+    twitter: {
+      title: "Blog",
+      description:
+        "A place for my thoughts, adventures and experiences worth sharing...",
+      creator: "Sommmtoooo",
+      creatorId: "sommmtoooo",
+    },
+    openGraph: {
+      type: "website",
+      title: "Blog",
+      description:
+        "A place for my thoughts, adventures and experiences worth sharing...",
+      images: [
+        {
+          url: `https://sommmtoooo.vercel.app/og/Somto`,
+        },
+      ],
+    },
+  };
+}
 
 export default function page() {
   const posts = getPostMetaData(POSTS_DIRECTORY);
