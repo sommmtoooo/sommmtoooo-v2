@@ -1,3 +1,5 @@
+import { getPostBySlug } from "@/utils/posts.utils";
+import { Metadata } from "next";
 import { Onest } from "next/font/google";
 import { ReactNode } from "react";
 
@@ -7,6 +9,36 @@ interface Props {
 }
 
 const onest = Onest({ weight: "400", subsets: ["latin"] });
+
+export async function generateMetadata({
+  params: { slug },
+}: {
+  params: any;
+}): Metadata {
+  const post = getPostBySlug(slug);
+  return {
+    title: post?.title ?? "Somtochukwu Blog",
+    description: post?.description,
+    keywords: post?.keywords,
+    twitter: {
+      title: post?.title,
+      description: post?.description,
+      creator: "Sommmtoooo",
+      creatorId: "sommmtoooo",
+    },
+    openGraph: {
+      type: "website",
+      url: "https://sommmtoooo.vercel.app",
+      title: post?.title,
+      description: post?.description,
+      images: [
+        {
+          url: `https://sommmtoooo.vercel.app/og/${post?.title}`,
+        },
+      ],
+    },
+  };
+}
 
 export default function RootLayout({ children, params }: Props) {
   return (
