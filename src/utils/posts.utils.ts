@@ -23,7 +23,7 @@ export function getPostMetaData(base_path: string): Array<Post> {
   });
 
   return data.sort((prev, next) => {
-    if (prev.date < next.date) {
+    if (prev.date > next.date) {
       return 1;
     }
 
