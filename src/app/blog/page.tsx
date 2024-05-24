@@ -1,10 +1,16 @@
 import BlogCard from "@/components/BlogCard";
+import BlogList from "@/components/BlogList";
+import { getDateYear } from "@/utils";
 import { POSTS_DIRECTORY, getPostMetaData } from "@/utils/posts.utils";
 import Link from "next/link";
 import React from "react";
 
 export default function page() {
   const posts = getPostMetaData(POSTS_DIRECTORY);
+  const posts_year = posts
+    .map((post) => getDateYear(post.date))
+    .filter((year, index, self) => index === self.indexOf(year));
+
   return (
     <section>
       <div className="mb-20">
@@ -20,11 +26,9 @@ export default function page() {
         </Link>
       </div>
 
-      <div>
-        {posts.map((post, index) => (
-          <BlogCard key={index} post={post} />
-        ))}
-      </div>
+      {posts_year.map((year) => (
+        <BlogList key={year} year={year} />
+      ))}
     </section>
   );
 }

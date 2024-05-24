@@ -3,3 +3,7 @@ export function formatDate(date: string) {
     dateStyle: "long",
   });
 }
+
+export function getDateYear(date: string) {
+  return new Date(date).getFullYear();
+}

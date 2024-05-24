@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 
 import ProfilePicture from "@/images/profile.png";
-import { Post } from "@/types";
 import { POSTS_DIRECTORY, getPostMetaData } from "@/utils/posts.utils";
 import BlogCard from "@/components/BlogCard";
 

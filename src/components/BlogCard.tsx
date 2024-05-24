@@ -10,7 +10,7 @@ export default function BlogCard({ post }: BlogCardProps) {
   return (
     <article className="my-5">
       <Link href={`/blog/${post.slug as string}`}>
-        <h1 className="text-xl font-semibold transition-all hover:animate-pulse hover:italic">
+        <h1 className="text-xl font-medium transition-all hover:animate-pulse hover:italic">
           {post.title}
         </h1>
       </Link>

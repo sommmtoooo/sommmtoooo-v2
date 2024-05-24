@@ -2,7 +2,6 @@ import { Post } from "@/types";
 import { readFileSync, readdirSync } from "fs";
 import { join } from "path";
 import matter from "gray-matter";
-import { match } from "assert";
 
 export const POSTS_DIRECTORY = join(process.cwd(), "src/posts");
 
