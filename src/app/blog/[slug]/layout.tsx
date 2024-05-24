@@ -10,11 +10,7 @@ interface Props {
 
 const onest = Onest({ weight: "400", subsets: ["latin"] });
 
-export async function generateMetadata({
-  params: { slug },
-}: {
-  params: any;
-}): Metadata {
+export async function generateMetadata({ params: { slug } }: { params: any }) {
   const post = getPostBySlug(slug);
   return {
     title: post?.title ?? "Somtochukwu Blog",
