@@ -46,9 +46,9 @@ export default function page() {
         </p>
         <Link
           href={"/"}
-          className="underline font-bold transition-all hover:text-emerald-400 hover:ml-4"
+          className="underline font-bold transition-all text-emerald-700 hover:ml-4"
         >
-          &lt; Home
+          Go Home
         </Link>
       </div>
 

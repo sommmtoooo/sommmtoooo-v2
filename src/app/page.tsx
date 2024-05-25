@@ -95,9 +95,9 @@ export default function page() {
 
         <Link
           href={"/blog"}
-          className="underline font-semibold transition-all hover:ml-5 hover:text-emerald-400"
+          className="underline text-neutral-400 font-semibold transition-all hover:ml-5 hover:text-emerald-700"
         >
-          More Writings &gt;
+          More Writings...
         </Link>
       </section>
 
@@ -108,7 +108,7 @@ export default function page() {
           I&apos;d be happy to write back if you&apos;d like to send me{" "}
           <Link
             href={"mailto:leroynnalue65@gmail.com"}
-            className="underline text-emerald-400"
+            className="underline hover:text-emerald-700"
           >
             an email
           </Link>
@@ -116,7 +116,7 @@ export default function page() {
           <Link
             target="_blank"
             href={"https://twitter.com/sommmtoooo"}
-            className="underline text-emerald-400"
+            className="underline hover:text-emerald-700"
           >
             Twitter
           </Link>
@@ -124,7 +124,7 @@ export default function page() {
           <Link
             target="_blank"
             href={"https://github.com/sommmtoooo"}
-            className="underline text-emerald-400"
+            className="underline hover:text-emerald-700"
           >
             Github
           </Link>
@@ -132,7 +132,7 @@ export default function page() {
           <Link
             target="_blank"
             href={"https://www.linkedin.com/in/sommmtoooo"}
-            className="underline text-emerald-400"
+            className="underline hover:text-emerald-700"
           >
             LinkedIn
           </Link>

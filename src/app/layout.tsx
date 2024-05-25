@@ -69,12 +69,10 @@ export default function RootLayout({
           sizes="16x16"
           href="favicon/favicon-16x16.png"
         />
-        <link rel="manifest" href="favicon/site.webmanifest" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
       </head>
       <body className={dm_sans.className}>
-        <main className="w-5/6 mx-auto my-5">
-          {children}
-        </main>
+        <main className="w-5/6 mx-auto my-5">{children}</main>
       </body>
     </html>
   );

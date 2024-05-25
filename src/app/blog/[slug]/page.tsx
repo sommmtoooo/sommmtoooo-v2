@@ -1,4 +1,4 @@
-import { getPostContent } from "@/utils/posts.utils";
+import { getPostBySlug, getPostContent } from "@/utils/posts.utils";
 import Markdown from "markdown-to-jsx";
 import Link from "next/link";
 import React from "react";
@@ -9,15 +9,41 @@ interface Props {
   params: any;
 }
 
-export default function page({ params }: Props) {
+export async function generateMetadata({ params: { slug } }: { params: any }) {
+  const post = getPostBySlug(slug);
+  return {
+    title: post?.title ?? "Somtochukwu Blog",
+    description: post?.description,
+    keywords: post?.keywords,
+    twitter: {
+      title: post?.title,
+      description: post?.description,
+      creator: "Sommmtoooo",
+      creatorId: "sommmtoooo",
+    },
+    openGraph: {
+      type: "website",
+      url: "https://sommmtoooo.vercel.app",
+      title: post?.title,
+      description: post?.description,
+      images: [
+        {
+          url: `https://sommmtoooo.vercel.app/og/${post?.title}`,
+        },
+      ],
+    },
+  };
+}
+
+export default async function page({ params }: Props) {
   const slug = params.slug;
   const post = getPostContent(slug);
 
   return (
-    <section className="w-5/6 mx-auto my-5 blog-content">
+    <section className="my-5 blog-content">
       <Link
-        href={".."}
-        className="font-bold text-emerald-400 transition-all hover:ml-5"
+        href={"/blog"}
+        className="font-bold text-emerald-700 transition-all hover:ml-5"
       >
         Go Back
       </Link>
