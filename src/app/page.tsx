@@ -29,16 +29,16 @@ export default function page() {
       <section className="my-16">
         <h2 className="font-semibold text-2xl">About</h2>
         <p className="text-neutral-400 my-3 max-w-prose text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aliquid
-          magni quae? Eaque fuga, dignissimos explicabo, ut sapiente dolorem
-          eveniet accusantium, laboriosam ex veritatis mollitia earum sit?
-          Magnam, est ipsa?
+          Hello, I am Somto. I love crafting software that solves problems for
+          myself and others. Although I'm a certified software engineer, I still
+          feel like there's so much to learn. As I continue my journey into the
+          world of software development, my passion for the craft knows no
+          bounds.
         </p>
         <p className="text-neutral-400 my-3 max-w-prose text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aliquid
-          magni quae? Eaque fuga, dignissimos explicabo, ut sapiente dolorem
-          eveniet accusantium, laboriosam ex veritatis mollitia earum sit?
-          Magnam, est ipsa?
+          In my free time, I enjoy reading articles and books, and creating
+          videos that I never share online. I also love playing chess whenever I
+          need a mental break.
         </p>
       </section>
 
@@ -46,9 +46,8 @@ export default function page() {
       <section className="my-16">
         <h2 className="font-semibold text-2xl">Interests</h2>
         <p className="text-neutral-400 my-3 max-w-prose text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aliquid
-          magni quae? Eaque fuga, dignissimos explicabo, ut sapiente dolorem
-          eveniet accusantium, laboriosam ex veritatis mollitia.
+          Here are some of the activities and technologies that I invest my time
+          in:
         </p>
 
         <ul className="ml-5 list-disc">
@@ -62,9 +61,10 @@ export default function page() {
       <section className="my-16">
         <h2 className="font-semibold text-2xl">Work</h2>
         <p className="text-neutral-400 my-3 max-w-prose text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aliquid
-          magni quae? Eaque fuga, dignissimos explicabo, ut sapiente dolorem
-          eveniet accusantium, laboriosam ex veritatis mollitia.
+          I have trained dozens of students in web design, database management,
+          and other technologies. Currently, I am tutoring at the institute
+          where I graduated as a software engineer. Additionally, I craft
+          websites to help businesses connect with their customers.
         </p>
       </section>
 
@@ -72,9 +72,9 @@ export default function page() {
       <section className="my-16">
         <h2 className="font-semibold text-2xl">Projects</h2>
         <p className="text-neutral-400 my-3 max-w-prose text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aliquid
-          magni quae? Eaque fuga, dignissimos explicabo, ut sapiente dolorem
-          eveniet accusantium, laboriosam ex veritatis mollitia.
+          Over my two-plus years of experience, I haven't built any major
+          projects yet. Instead, I focus on creating tools to automate my daily
+          tasks and for exploration purposes.
         </p>
       </section>
 
@@ -82,9 +82,9 @@ export default function page() {
       <section className="my-16">
         <h2 className="font-semibold text-2xl">Writings</h2>
         <p className="text-neutral-400 my-3 max-w-prose text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aliquid
-          magni quae? Eaque fuga, dignissimos explicabo, ut sapiente dolorem
-          eveniet accusantium, laboriosam ex veritatis mollitia.
+          I enjoy writing about what I am currently learning, my life
+          experiences, and my journey as a broke teenager striving for financial
+          freedom.
         </p>
 
         <div className="my-8">
