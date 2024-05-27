@@ -30,10 +30,10 @@ export default function page() {
         <h2 className="font-semibold text-2xl">About</h2>
         <p className="text-neutral-400 my-3 max-w-prose text-xl">
           Hello, I am Somto. I love crafting software that solves problems for
-          myself and others. Although I'm a certified software engineer, I still
-          feel like there's so much to learn. As I continue my journey into the
-          world of software development, my passion for the craft knows no
-          bounds.
+          myself and others. Although I&apos;m a certified software engineer, I
+          still feel like there&apos;s so much to learn. As I continue my
+          journey into the world of software development, my passion for the
+          craft knows no bounds.
         </p>
         <p className="text-neutral-400 my-3 max-w-prose text-xl">
           In my free time, I enjoy reading articles and books, and creating
@@ -72,7 +72,7 @@ export default function page() {
       <section className="my-16">
         <h2 className="font-semibold text-2xl">Projects</h2>
         <p className="text-neutral-400 my-3 max-w-prose text-xl">
-          Over my two-plus years of experience, I haven't built any major
+          Over my two-plus years of experience, I haven&apos;t built any major
           projects yet. Instead, I focus on creating tools to automate my daily
           tasks and for exploration purposes.
         </p>
