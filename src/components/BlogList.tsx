@@ -9,7 +9,12 @@ interface Props {
 export default function BlogList({ year }: Props) {
   const posts = getPostMetaData(POSTS_DIRECTORY);
   const getPostsByYear = (year: number) => {
-    return posts.filter((post) => getDateYear(post.date) === year);
+    return posts
+      .filter((post) => getDateYear(post.date) === year)
+      .sort(
+        (prev, next) =>
+          new Date(next.date).valueOf() - new Date(prev.date).valueOf(),
+      );
   };
   const post_by_year = getPostsByYear(year);
 

@@ -1,7 +1,6 @@
 import BlogList from "@/components/BlogList";
 import { getDateYear } from "@/utils";
 import { POSTS_DIRECTORY, getPostMetaData } from "@/utils/posts.utils";
-import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
 
@@ -39,16 +38,22 @@ export default function page() {
 
   return (
     <section>
-      <div className="mb-20">
+      <div className="mb-10 lg:mb-20">
         <h1 className="text-3xl font-bold mb-2">Blog</h1>
         <p className="my-4">
           A place for my thoughts, adventures and experiences worth sharing...
         </p>
         <Link
           href={"/"}
-          className="underline font-bold transition-all text-emerald-700 hover:ml-4"
+          className="underline font-bold transition-[1000] text-emerald-700 mr-6 hover:ml-4"
         >
           Go Home
+        </Link>
+        <Link
+          href={"/projects"}
+          className="underline font-bold transition-[1000] text-emerald-700 hover:ml-4"
+        >
+          Projects
         </Link>
       </div>
 

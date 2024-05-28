@@ -9,7 +9,7 @@ export default function ProjectCard({ project }: Props) {
 
   return (
     <div className="my-4">
-      <h2 className="text-xl text-neutral-400 font-semibold">{name}</h2>
+      <h2 className="text-xl font-semibold">{name}</h2>
       <p className="text-neutral-400 my-2">{description}</p>
       {url ? (
         <a

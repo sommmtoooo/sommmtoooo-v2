@@ -11,7 +11,14 @@ import ProjectCard from "@/components/ProjectCard";
 import { Project } from "@/types";
 
 export default function page() {
-  const posts = getPostMetaData(POSTS_DIRECTORY).filter((post) => !post.draft);
+  const posts = getPostMetaData(POSTS_DIRECTORY)
+    .filter((post) => !post.draft)
+    .sort(
+      (prev, next) =>
+        new Date(next.date).valueOf() - new Date(prev.date).valueOf(),
+    )
+    .slice(0, 3);
+
   return (
     <section className="">
       <Image
@@ -65,10 +72,25 @@ export default function page() {
       <section className="my-16">
         <h2 className="font-semibold text-2xl">Work</h2>
         <p className="text-neutral-400 my-3 max-w-prose text-xl">
-          I have trained dozens of students in web design, database management,
-          and other technologies. Currently, I am tutoring at the institute
-          where I graduated as a software engineer. Additionally, I craft
-          websites to help businesses connect with their customers.
+          Currently, I am training over a dozen students in web design, database
+          management, and other technologies at&nbsp;
+          <a className="text-emerald-600 font-semibold">
+            Prime Innovation Institure Of Technology
+          </a>
+          . In the evenings or whenever I have the chance, I build web
+          applications at{" "}
+          <a
+            target="_blank"
+            href="https://codecamp.ng/"
+            className="text-emerald-600 font-semibold underline"
+          >
+            Codecamp Nigeria
+          </a>
+          .{" "}
+        </p>
+        <p className="text-neutral-400 my-3 max-w-prose text-xl">
+          On the side, I craft websites to help small-scale businesses connect
+          with their customers.
         </p>
       </section>
 
@@ -82,7 +104,7 @@ export default function page() {
         </p>
 
         <div className="my-8">
-          {projects.map((project, index) => (
+          {projects.slice(0, 3).map((project, index) => (
             <ProjectCard key={index} project={project as Project} />
           ))}
         </div>
