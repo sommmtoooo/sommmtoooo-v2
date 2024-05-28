@@ -2,11 +2,11 @@ import { getDateYear } from "@/utils";
 import { POSTS_DIRECTORY, getPostMetaData } from "@/utils/posts.utils";
 import BlogCard from "./BlogCard";
 
-interface BlogListProps {
+interface Props {
   year: number;
 }
 
-export default function BlogList({ year }: BlogListProps) {
+export default function BlogList({ year }: Props) {
   const posts = getPostMetaData(POSTS_DIRECTORY);
   const getPostsByYear = (year: number) => {
     return posts.filter((post) => getDateYear(post.date) === year);

@@ -6,8 +6,12 @@ import ProfilePicture from "@/images/profile.png";
 import { POSTS_DIRECTORY, getPostMetaData } from "@/utils/posts.utils";
 import BlogCard from "@/components/BlogCard";
 
+import projects from "@/data/projects.json";
+import ProjectCard from "@/components/ProjectCard";
+import { Project } from "@/types";
+
 export default function page() {
-  const posts = getPostMetaData(POSTS_DIRECTORY);
+  const posts = getPostMetaData(POSTS_DIRECTORY).filter((post) => !post.draft);
   return (
     <section className="">
       <Image
@@ -76,6 +80,19 @@ export default function page() {
           projects yet. Instead, I focus on creating tools to automate my daily
           tasks and for exploration purposes.
         </p>
+
+        <div className="my-8">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project as Project} />
+          ))}
+        </div>
+
+        <Link
+          href={"/projects"}
+          className="underline text-neutral-400 font-semibold transition-all hover:ml-5 hover:text-emerald-700"
+        >
+          More Projects&nbsp;({projects.length})...
+        </Link>
       </section>
 
       {/* Writings */}
@@ -97,7 +114,7 @@ export default function page() {
           href={"/blog"}
           className="underline text-neutral-400 font-semibold transition-all hover:ml-5 hover:text-emerald-700"
         >
-          More Writings...
+          More Writings&nbsp;({posts.length})...
         </Link>
       </section>
 

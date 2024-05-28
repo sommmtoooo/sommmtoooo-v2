@@ -2,11 +2,11 @@ import { Post } from "@/types";
 import { formatDate } from "@/utils";
 import Link from "next/link";
 
-interface BlogCardProps {
+interface Props {
   post: Post;
 }
 
-export default function BlogCard({ post }: BlogCardProps) {
+export default function BlogCard({ post }: Props) {
   return (
     <article className="my-5">
       <a href={`/blog/${post.slug}`}>

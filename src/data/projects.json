@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Quik Drop",
+    "description": "Transfer files from your laptop to your mobile devices with just one command",
+    "image": "quik-drop.png",
+    "status": "ARCHIVED",
+    "repository": "https://github.com/sommmtoooo/quik-drop"
+  },
+  {
+    "name": "Lifeflow",
+    "description": "Blood donation made easier, view & and accept blood donation requests",
+    "image": "cover-1.png",
+    "status": "ARCHIVED",
+    "repository": "https://github.com/sommmtoooo/lifeflow"
+  },
+  {
+    "name": "Blogga",
+    "description": "A minimalistic markdown blogging template website, ready to be customized and deploy",
+    "image": "blogga.png",
+    "status": "ARCHIVED",
+    "url": "http://blogga.rf.gd/",
+    "repository": "https://github.com/sommmtoooo/blogga"
+  },
+  {
+    "name": "BOM Clearing Consultant",
+    "description": "Freelance web development  project for a distinguished logistics firm specialized in delivering comprehensive clearing and forwarding services.",
+    "image": "bom.png",
+    "url": "https://bomclearingconsultant.com/"
+  }
+]
