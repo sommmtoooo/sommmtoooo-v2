@@ -12,7 +12,11 @@ export default function ProjectCard({ project }: Props) {
       <h2 className="text-xl text-neutral-400 font-semibold">{name}</h2>
       <p className="text-neutral-400 my-2">{description}</p>
       {url ? (
-        <a target="_blank" href={url} className="mr-4 text-emerald-700">
+        <a
+          target="_blank"
+          href={url}
+          className="mr-4 text-emerald-700 animate-pulse"
+        >
           Live
         </a>
       ) : (
@@ -20,7 +24,11 @@ export default function ProjectCard({ project }: Props) {
       )}
 
       {repository ? (
-        <a target="_blank" href={repository} className="text-emerald-600">
+        <a
+          target="_blank"
+          href={repository}
+          className="text-emerald-600 transition-[1000ms] hover:ml-4"
+        >
           Source
         </a>
       ) : (
