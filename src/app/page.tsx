@@ -75,7 +75,7 @@ export default function page() {
           Currently, I am training over a dozen students in web design, database
           management, and other technologies at&nbsp;
           <a className="text-emerald-600 font-semibold">
-            Prime Innovation Institure Of Technology
+            Prime Innovation Institute Of Technology
           </a>
           . In the evenings or whenever I have the chance, I build web
           applications at{" "}
